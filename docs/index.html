@@ -18,6 +18,7 @@
               <span v-if="camera.id == activeCameraId" :title="formatName(camera.name)" class="active">{{ formatName(camera.name) }}</span>
               <span v-if="camera.id != activeCameraId" :title="formatName(camera.name)">
                 <a @click.stop="selectCamera(camera)">{{ formatName(camera.name) }}</a>
+                <span>{{ formatName(camera.id) }}</span>
               </span>
             </li>
           </ul>
